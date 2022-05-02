@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int no1,no2,sum;
+	clrscr();
+	cout<<"enter the no1 :=";
+	cin>>no1;
+
+	cout<<"enter the no2 :=";
+	cin>>no2;
+
+	sum=no1+no2;
+
+	cout<<"sum is :="<<sum;
+
+	if(sum > 10)
+	{
+	cout<<"sum is greater than 10";
+	}
+
+	getch();
+}

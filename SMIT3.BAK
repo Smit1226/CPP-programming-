@@ -1,0 +1,70 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int no1,no2,no3,no4;
+	clrscr();
+	cout<<"enter the number 1 :=";
+	cin>>no1;
+
+	cout<<"enter the number 2 :=";
+	cin>>no2;
+
+	cout<<"enter the number 3 :=";
+	cin>>no3;
+
+	cout<<"enter the number 4 :=";
+	cin>>no4;
+
+	if(no1>no2)
+	{
+		if(no1>no3)
+		{
+			if(no1>no4)
+			{
+			cout<<"no1 is big";
+			}
+			else
+			{
+			cout<<"no4 is big";
+			}
+		}
+		else
+		{
+			if (no3>no4)
+			{
+			cout<<"no3 is big";
+			}
+			else
+			{
+			cout<<"no4 is big";
+			}
+		}
+	}
+
+	else
+	{
+		if(no2>no3)
+		{
+			if(no2>no4)
+			{
+			cout<<"no2 is big";
+			}
+			else
+			{
+			cout<<"no4 is big";
+			}
+		else
+		{
+			if (no3>no4)
+			{
+			cout<<"no3 is big";
+			}
+			else
+			{
+			cout<<"no4 is big";
+			}
+		}
+	}
+	getch();
+}

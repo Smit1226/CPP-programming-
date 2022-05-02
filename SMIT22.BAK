@@ -1,0 +1,18 @@
+//static member FUNCTION
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+	public:
+	static void getdata()
+	{
+		cout<<"vbv bcvb";
+	}
+};
+void main()
+{
+	clrscr();
+	abc :: getdata();
+	getch();
+}
+

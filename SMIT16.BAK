@@ -1,0 +1,58 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+	public:
+	int no;
+	void setdata(int x)
+	{
+		no = x;
+
+
+		putdata();
+	 }
+	 void putdata()
+	 {
+
+		int i,t1=0,t2=1,nextterm=0;
+
+
+		cout<<"fibonacci series:";
+
+		for (i=1;i<=5;i++)
+		{
+			if(i==1)
+			{
+				cout<<"  "<<t1;
+				continue;
+			}
+			if (i==2)
+			{
+				cout<<t2 <<"  ";
+				continue;
+			}
+
+			nextterm= t1 + t2;
+			t1 = t2;
+			t2 = nextterm;
+
+			cout<<nextterm<<"  ";
+		}
+	 }
+};
+void main()
+{
+
+	int factorial(int);
+	int fact,value;
+	clrscr();
+	fact=factorial(value);
+	cout<<"factorial of a number is :"<<fact;
+	abc a1;
+	a1.setdata(5);
+	getch();
+}
+
+
+
+

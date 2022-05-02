@@ -1,0 +1,20 @@
+#include<iostream.h>
+#include<conio.h>
+class Demo
+{
+    public:
+    void showMessage()
+    {
+	cout<<"smit "<<endl;
+    }
+    void display()const
+    {
+	cout<<"shiroya"<<endl;
+    }
+};
+void main()
+{
+    const Demo d1;
+    d1.display();
+    getch();
+}

@@ -1,0 +1,67 @@
+#include<iostream.h>
+#include<conio.h>
+class banking
+{
+	public:
+	int acno, balance;
+	char acname[30],actype[30],branch[30];
+	void getdata();
+	void setdata(int tn);
+
+};
+
+void banking :: getdata()
+{
+	cout<<"enter the account number         :=";
+	cin>>acno;
+	cout<<"enter the account name           :=";
+	cin>>acname;
+	cout<<"enter the account type           :=";
+	cin>>actype;
+	cout<<"enter the account balance        :=";
+	cin>>balance;
+	cout<<"enter the account branch         :=";
+	cin>>branch;
+	cout<<endl;
+}
+
+void banking :: setdata(int tn)
+{
+	if(tn==acno)
+	{
+		cout<<"the account number is        :="<<acno<<endl;
+		cout<<"the account name is          :="<<acname<<endl;
+		cout<<"the account type is          :="<<actype<<endl;
+		cout<<"the account balance is       :="<<balance<<endl;
+		cout<<"the account branch is        :="<<branch<<endl;
+		cout<<endl;
+	}
+}
+
+void main ()
+{
+	banking r1[5];
+	int i,count,tn;
+	clrscr();
+	cout<<"----------------------------------------------------------------"<<endl;
+	cout<<"################### BANK MANAGEMENT SYSTEM #####################"<<endl;
+	cout<<"----------------------------------------------------------------"<<endl;
+	cout<<"enter the record of ACCOUNT      := ";
+	cin>>count;
+	cout<<endl;
+	for(i=0;i<count;i++)
+	{
+		r1[i].getdata();
+	}
+
+	cout<<"enter the account number to get data :=";
+	cin>>tn;
+	cout<<endl;
+
+	for(i=0;i<count;i++)
+	{
+		r1[i].setdata(tn);
+
+	}
+	getch();
+}
